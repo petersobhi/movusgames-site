@@ -23,16 +23,15 @@
 <meta name="twitter:description" content="Body-controlled fitness games for iPhone. Nothing is ever recorded or uploaded.">
 <meta name="twitter:image" content="https://movusgames.com/img/og.jpg">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" type="image/avif" imagesrcset="img/shot-boxing-700.avif 700w, img/shot-boxing-1000.avif 1000w, img/shot-boxing-1400.avif 1400w" imagesizes="(max-width: 900px) 92vw, 560px" fetchpriority="high">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
 <header class="site">
   <div class="wrap">
-    <a class="brand" href="/"><img src="img/icon-96.png" width="32" height="32" alt=""><span>MOVUS</span></a>
+    <a class="brand" href="/"><picture><source type="image/avif" sizes="32px" srcset="img/icon-96.avif 96w, img/icon-192.avif 192w"><source type="image/webp" sizes="32px" srcset="img/icon-96.webp 96w, img/icon-192.webp 192w"><img sizes="32px" decoding="async" src="img/icon-96.png" width="32" height="32" alt=""></picture><span>MOVUS</span></a>
     <nav class="site">
       <a href="#games">Games</a>
       <a href="#how">How it works</a>
@@ -60,8 +59,8 @@
       <p class="note-inline">iPhone · iOS 17 or later · a couple of metres of space</p>
     </div>
     <div class="device">
-      <img src="img/shot-boxing.jpg" width="1400" height="644" fetchpriority="high"
-           alt="Boxing in Movus: first person, both fists, slipping a counter in a floodlit ring.">
+      <picture><source type="image/avif" sizes="(max-width: 900px) 92vw, 560px" srcset="img/shot-boxing-700.avif 700w, img/shot-boxing-1000.avif 1000w, img/shot-boxing-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 900px) 92vw, 560px" srcset="img/shot-boxing-700.webp 700w, img/shot-boxing-1000.webp 1000w, img/shot-boxing-1400.webp 1400w"><img sizes="(max-width: 900px) 92vw, 560px" decoding="async" src="img/shot-boxing.jpg" width="1400" height="644" fetchpriority="high"
+           alt="Boxing in Movus: first person, both fists, slipping a counter in a floodlit ring."></picture>
     </div>
   </div>
 </div>
@@ -107,16 +106,16 @@
     and each one is a workout whether or not you came for one.</p>
 
     <div class="games">
-      <figure class="game"><img src="img/card-runner.jpg" loading="lazy" width="330" height="402" alt=""><b>Move Rush</b></figure>
-      <figure class="game"><img src="img/card-skyfall.jpg" loading="lazy" width="330" height="402" alt=""><b>Skyfall</b></figure>
-      <figure class="game"><img src="img/card-downhill.jpg" loading="lazy" width="330" height="402" alt=""><b>Downhill</b></figure>
-      <figure class="game"><img src="img/card-boxing.jpg" loading="lazy" width="330" height="402" alt=""><b>Boxing</b></figure>
-      <figure class="game"><img src="img/card-keeper.jpg" loading="lazy" width="330" height="402" alt=""><b>Penalty Hero</b></figure>
-      <figure class="game"><img src="img/card-swim.jpg" loading="lazy" width="330" height="402" alt=""><b>Swim</b></figure>
-      <figure class="game"><img src="img/card-slash.jpg" loading="lazy" width="330" height="402" alt=""><b>Slash</b></figure>
-      <figure class="game"><img src="img/card-squats.jpg" loading="lazy" width="330" height="402" alt=""><b>Squat Rush</b></figure>
-      <figure class="game"><img src="img/card-hula.jpg" loading="lazy" width="330" height="402" alt=""><b>Hula Hoop</b></figure>
-      <figure class="game"><img src="img/card-dance.jpg" loading="lazy" width="330" height="402" alt=""><b>Dance Off</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.avif 400w, img/card-runner-550.avif 550w, img/card-runner-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.webp 400w, img/card-runner-550.webp 550w, img/card-runner-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-runner.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Move Rush</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.avif 400w, img/card-skyfall-550.avif 550w, img/card-skyfall-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.webp 400w, img/card-skyfall-550.webp 550w, img/card-skyfall-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-skyfall.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Skyfall</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.avif 400w, img/card-downhill-550.avif 550w, img/card-downhill-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.webp 400w, img/card-downhill-550.webp 550w, img/card-downhill-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-downhill.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Downhill</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.avif 400w, img/card-boxing-550.avif 550w, img/card-boxing-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.webp 400w, img/card-boxing-550.webp 550w, img/card-boxing-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-boxing.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Boxing</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.avif 400w, img/card-keeper-550.avif 550w, img/card-keeper-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.webp 400w, img/card-keeper-550.webp 550w, img/card-keeper-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-keeper.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Penalty Hero</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.avif 400w, img/card-swim-550.avif 550w, img/card-swim-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.webp 400w, img/card-swim-550.webp 550w, img/card-swim-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-swim.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Swim</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.avif 400w, img/card-slash-550.avif 550w, img/card-slash-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.webp 400w, img/card-slash-550.webp 550w, img/card-slash-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-slash.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Slash</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.avif 400w, img/card-squats-550.avif 550w, img/card-squats-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.webp 400w, img/card-squats-550.webp 550w, img/card-squats-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-squats.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Squat Rush</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.avif 400w, img/card-hula-550.avif 550w, img/card-hula-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.webp 400w, img/card-hula-550.webp 550w, img/card-hula-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-hula.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Hula Hoop</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.avif 400w, img/card-dance-550.avif 550w, img/card-dance-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.webp 400w, img/card-dance-550.webp 550w, img/card-dance-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-dance.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Dance Off</b></figure>
     </div>
   </div>
 </section>
@@ -131,15 +130,15 @@
   </div>
   <div class="wrap">
     <div class="shots">
-      <figure><img src="img/shot-body.jpg" loading="lazy" width="1400" height="644" alt="Move Rush: sprinting a dusk city street."></figure>
-      <figure><img src="img/shot-hub.jpg" loading="lazy" width="1400" height="644" alt="The Movus home screen, showing the game line-up."></figure>
-      <figure><img src="img/shot-boxing.jpg" loading="lazy" width="1400" height="644" alt="Boxing, played in first person with both fists."></figure>
-      <figure><img src="img/shot-keeper.jpg" loading="lazy" width="1400" height="644" alt="Penalty Hero: diving to save a shot."></figure>
-      <figure><img src="img/shot-swim.jpg" loading="lazy" width="1400" height="644" alt="Swim: front crawl read off both arms."></figure>
-      <figure><img src="img/shot-slash.jpg" loading="lazy" width="1400" height="644" alt="Slash: cutting fruit with both hands on a rooftop."></figure>
-      <figure><img src="img/shot-squats.jpg" loading="lazy" width="1400" height="644" alt="Squat Rush: ducking balls thrown across a park."></figure>
-      <figure><img src="img/shot-progress.jpg" loading="lazy" width="1400" height="644" alt="The progress screen: calories, reps and streaks."></figure>
-      <figure><img src="img/shot-privacy.jpg" loading="lazy" width="1400" height="644" alt="Settings, showing that the camera runs entirely on-device."></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-body-700.avif 700w, img/shot-body-1000.avif 1000w, img/shot-body-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-body-700.webp 700w, img/shot-body-1000.webp 1000w, img/shot-body-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-body.jpg" loading="lazy" width="1400" height="644" alt="Move Rush: sprinting a dusk city street."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-hub-700.avif 700w, img/shot-hub-1000.avif 1000w, img/shot-hub-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-hub-700.webp 700w, img/shot-hub-1000.webp 1000w, img/shot-hub-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-hub.jpg" loading="lazy" width="1400" height="644" alt="The Movus home screen, showing the game line-up."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-boxing-700.avif 700w, img/shot-boxing-1000.avif 1000w, img/shot-boxing-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-boxing-700.webp 700w, img/shot-boxing-1000.webp 1000w, img/shot-boxing-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-boxing.jpg" loading="lazy" width="1400" height="644" alt="Boxing, played in first person with both fists."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-keeper-700.avif 700w, img/shot-keeper-1000.avif 1000w, img/shot-keeper-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-keeper-700.webp 700w, img/shot-keeper-1000.webp 1000w, img/shot-keeper-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-keeper.jpg" loading="lazy" width="1400" height="644" alt="Penalty Hero: diving to save a shot."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-swim-700.avif 700w, img/shot-swim-1000.avif 1000w, img/shot-swim-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-swim-700.webp 700w, img/shot-swim-1000.webp 1000w, img/shot-swim-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-swim.jpg" loading="lazy" width="1400" height="644" alt="Swim: front crawl read off both arms."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-slash-700.avif 700w, img/shot-slash-1000.avif 1000w, img/shot-slash-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-slash-700.webp 700w, img/shot-slash-1000.webp 1000w, img/shot-slash-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-slash.jpg" loading="lazy" width="1400" height="644" alt="Slash: cutting fruit with both hands on a rooftop."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-squats-700.avif 700w, img/shot-squats-1000.avif 1000w, img/shot-squats-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-squats-700.webp 700w, img/shot-squats-1000.webp 1000w, img/shot-squats-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-squats.jpg" loading="lazy" width="1400" height="644" alt="Squat Rush: ducking balls thrown across a park."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-progress-700.avif 700w, img/shot-progress-1000.avif 1000w, img/shot-progress-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-progress-700.webp 700w, img/shot-progress-1000.webp 1000w, img/shot-progress-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-progress.jpg" loading="lazy" width="1400" height="644" alt="The progress screen: calories, reps and streaks."></picture></figure>
+      <figure><picture><source type="image/avif" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-privacy-700.avif 700w, img/shot-privacy-1000.avif 1000w, img/shot-privacy-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 683px) 82vw, 560px" srcset="img/shot-privacy-700.webp 700w, img/shot-privacy-1000.webp 1000w, img/shot-privacy-1400.webp 1400w"><img sizes="(max-width: 683px) 82vw, 560px" decoding="async" src="img/shot-privacy.jpg" loading="lazy" width="1400" height="644" alt="Settings, showing that the camera runs entirely on-device."></picture></figure>
     </div>
   </div>
 </section>
@@ -198,8 +197,8 @@
       </ul>
     </div>
     <div class="device" style="transform:rotate(1deg)">
-      <img src="img/shot-progress.jpg" loading="lazy" width="1400" height="644"
-           alt="The Movus progress screen: calories burned, reps and a streak.">
+      <picture><source type="image/avif" sizes="(max-width: 900px) 92vw, 560px" srcset="img/shot-progress-700.avif 700w, img/shot-progress-1000.avif 1000w, img/shot-progress-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 900px) 92vw, 560px" srcset="img/shot-progress-700.webp 700w, img/shot-progress-1000.webp 1000w, img/shot-progress-1400.webp 1400w"><img sizes="(max-width: 900px) 92vw, 560px" decoding="async" src="img/shot-progress.jpg" loading="lazy" width="1400" height="644"
+           alt="The Movus progress screen: calories burned, reps and a streak."></picture>
     </div>
   </div>
 </section>
@@ -221,8 +220,8 @@
       </div>
     </div>
     <div class="device">
-      <img src="img/shot-privacy.jpg" loading="lazy" width="1400" height="644"
-           alt="Movus settings, showing on-device camera processing.">
+      <picture><source type="image/avif" sizes="(max-width: 900px) 92vw, 560px" srcset="img/shot-privacy-700.avif 700w, img/shot-privacy-1000.avif 1000w, img/shot-privacy-1400.avif 1400w"><source type="image/webp" sizes="(max-width: 900px) 92vw, 560px" srcset="img/shot-privacy-700.webp 700w, img/shot-privacy-1000.webp 1000w, img/shot-privacy-1400.webp 1400w"><img sizes="(max-width: 900px) 92vw, 560px" decoding="async" src="img/shot-privacy.jpg" loading="lazy" width="1400" height="644"
+           alt="Movus settings, showing on-device camera processing."></picture>
     </div>
   </div>
 </section>
