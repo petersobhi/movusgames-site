@@ -40,6 +40,7 @@ picture { display: block; }
   --crimson:  #f04a6e;
   --crimson-lit: #ff8ea5;
   --cyan:     #57c8ec;
+  --cyan-lit: #8fdcf5;
   --gold:     #ffc35a;
 
   --radius:   16px;
@@ -142,21 +143,32 @@ h1 {
   line-height: 1.02; letter-spacing: -0.028em; font-weight: 800;
   margin: 0 0 22px; text-wrap: balance;
 }
+/* **The wordmark carries the icon's own two halves.** The artwork is a boxer
+   and a swimmer on a diagonal split — rose-crimson against pool blue — so the
+   one word this page emphasises runs between exactly those two and nothing
+   else. It had a gold stop in the middle, which is a third colour the mark
+   does not contain. Both ends measure 9.15:1 and 10.30:1 on the page ground. */
 h1 em {
   font-style: normal;
-  background: linear-gradient(100deg, var(--crimson-lit), var(--gold) 55%, var(--cyan));
+  background: linear-gradient(105deg, var(--crimson-lit) 8%, var(--cyan) 92%);
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
 .lede { font-size: 19px; color: var(--text-2); margin: 0 0 30px; max-width: 46ch; }
 
 .cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+/* The call to action is the swimmer's blue, not the boxer's red: the crimson
+   is spent on accents all over this page — the eyebrow, the step numbers, the
+   rule beside the privacy claims — and a primary button in the same hue is one
+   more red thing rather than the one thing to press. Ink on cyan measures
+   **10.18:1** against 5.53 on the crimson, so it is also the more legible of
+   the two by a wide margin. */
 .pill {
   display: inline-flex; align-items: center; gap: 10px;
-  background: linear-gradient(180deg, var(--crimson-lit), var(--crimson));
-  color: #1a0410; font-weight: 700; font-size: 15px;
+  background: linear-gradient(180deg, var(--cyan-lit), var(--cyan));
+  color: #10222b; font-weight: 700; font-size: 15px;
   padding: 13px 22px; border-radius: 999px;
-  box-shadow: 0 10px 28px rgba(240,74,110,.28);
+  box-shadow: 0 10px 28px rgba(87,200,236,.26);
 }
 .pill:hover { text-decoration: none; filter: brightness(1.06); }
 .pill.ghost {
