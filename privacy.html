@@ -17,7 +17,7 @@
 
 <main>
   <h1>Privacy Policy</h1>
-  <p class="meta">Last updated 21 September 2026. Applies to the Movus iPhone app
+  <p class="meta">Last updated 30 September 2026. Applies to the Movus iPhone app
   and this website.</p>
 
   <div class="note">
@@ -32,14 +32,27 @@
   <p>Movus needs the front camera because your movement is the controller.
   Every frame is analysed on the device, used to work out where your body is,
   and discarded immediately.</p>
-  <p><b>Nothing derived from the camera is stored or transmitted.</b> Not the
+  <p><b>Nothing derived from the camera is ever transmitted.</b> Not the
   video, not still images, not the skeleton or joint positions the app computes
-  from them. The camera runs only while a game is running and stops when you
-  leave it — your phone's green camera indicator shows exactly when.</p>
+  from them. None of it leaves your phone, and none of it is written to disk
+  during ordinary play. The camera runs only while a game is running and stops
+  when you leave it — your phone's green camera indicator shows exactly when.</p>
+  <p>There is one exception, and it stays on your phone. Movus has a hidden
+  developer setting, off unless you deliberately turn it on by tapping the
+  version number in Settings seven times, which saves the joint positions of
+  your session to a file on the device so a detection problem can be
+  reproduced. The app says so on screen while it is on, the file is
+  overwritten by the next session, it is never uploaded, and deleting the app
+  removes it.</p>
 
   <h2>What the app does send</h2>
   <p>If usage statistics are on (they can be turned off — see below), Movus
-  sends one short summary at the end of each attempt at a game. It contains:</p>
+  sends a short summary at the end of each attempt at a game, and a handful of
+  one-line events in between: that the app was opened, that a game was opened,
+  that a setting was changed, whether you allowed the camera, that you finished
+  onboarding, and — if you use the character editor — the costume you chose.
+  None of them carries anything you typed or anything about you. Between them
+  they contain:</p>
   <table>
     <tr><th>What</th><th>Why</th></tr>
     <tr><td>Which game, whether you finished, how long, your score, reps and estimated calories</td>
@@ -50,6 +63,10 @@
         <td>Graphics quality is tuned per device class; there is no other way to know which class a report came from</td></tr>
     <tr><td>A random identifier created on first launch</td>
         <td>So one device's sessions can be counted as one person rather than many</td></tr>
+    <tr><td>Which character options you picked — hair, hair colour and kit</td>
+        <td>To see which of the options people actually use</td></tr>
+    <tr><td>Whether you have the app set to the light or the dark theme</td>
+        <td>So both are tested against how they are really used</td></tr>
   </table>
 
   <h3>About that identifier</h3>
