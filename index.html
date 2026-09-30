@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Movus — your body is the controller</title>
-<meta name="description" content="Movus turns your iPhone's front camera into a controller. Run, dodge, lean, swim and punch your way through real workouts — no buttons, no wearables, and nothing is ever recorded.">
+<title>Movus — Body-Controlled Fitness Games for iPhone</title>
+<meta name="description" content="Turn your iPhone's front camera into a controller. Eleven fitness games played by running, dodging, leaning and punching — nothing is ever recorded.">
+<meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0b0716">
 <link rel="canonical" href="https://movusgames.com/">
 <link rel="icon" href="img/favicon-64.png" sizes="64x64">
@@ -26,6 +27,61 @@
 <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" type="image/avif" imagesrcset="img/shot-boxing-700.avif 700w, img/shot-boxing-1000.avif 1000w, img/shot-boxing-1400.avif 1400w" imagesizes="(max-width: 900px) 92vw, 560px" fetchpriority="high">
 <link rel="stylesheet" href="style.css?v=4">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://movusgames.com/#org",
+      "name": "Movus",
+      "url": "https://movusgames.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://movusgames.com/img/icon-192.webp",
+        "width": 192,
+        "height": 192
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://movusgames.com/#site",
+      "name": "Movus",
+      "url": "https://movusgames.com/",
+      "publisher": {
+        "@id": "https://movusgames.com/#org"
+      },
+      "inLanguage": "en"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://movusgames.com/#app",
+      "name": "Movus",
+      "applicationCategory": "GameApplication",
+      "applicationSubCategory": "Health & Fitness",
+      "operatingSystem": "iOS 17.0 or later",
+      "url": "https://movusgames.com/",
+      "image": "https://movusgames.com/img/og.jpg",
+      "screenshot": [
+        "https://movusgames.com/img/shot-body.jpg",
+        "https://movusgames.com/img/shot-boxing.jpg",
+        "https://movusgames.com/img/shot-hub.jpg"
+      ],
+      "description": "Movus reads your movement through the iPhone's front camera and turns it into a game. Eleven fitness games played by running, dodging, leaning, swimming and punching, with no buttons and no wearables. Camera frames are processed on the device and never recorded or uploaded.",
+      "publisher": {
+        "@id": "https://movusgames.com/#org"
+      },
+      "featureList": [
+        "Camera-controlled gameplay with no buttons or wearables",
+        "Eleven fitness games",
+        "Calories, reps and streaks written to Apple Health",
+        "All camera processing on-device; nothing recorded or uploaded"
+      ],
+      "privacyPolicy": "https://movusgames.com/privacy.html"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -106,16 +162,16 @@
     and each one is a workout whether or not you came for one.</p>
 
     <div class="games">
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.avif 400w, img/card-runner-550.avif 550w, img/card-runner-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.webp 400w, img/card-runner-550.webp 550w, img/card-runner-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-runner.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Move Rush</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.avif 400w, img/card-skyfall-550.avif 550w, img/card-skyfall-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.webp 400w, img/card-skyfall-550.webp 550w, img/card-skyfall-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-skyfall.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Skyfall</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.avif 400w, img/card-downhill-550.avif 550w, img/card-downhill-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.webp 400w, img/card-downhill-550.webp 550w, img/card-downhill-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-downhill.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Downhill</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.avif 400w, img/card-boxing-550.avif 550w, img/card-boxing-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.webp 400w, img/card-boxing-550.webp 550w, img/card-boxing-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-boxing.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Boxing</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.avif 400w, img/card-keeper-550.avif 550w, img/card-keeper-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.webp 400w, img/card-keeper-550.webp 550w, img/card-keeper-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-keeper.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Penalty Hero</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.avif 400w, img/card-swim-550.avif 550w, img/card-swim-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.webp 400w, img/card-swim-550.webp 550w, img/card-swim-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-swim.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Swim</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.avif 400w, img/card-slash-550.avif 550w, img/card-slash-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.webp 400w, img/card-slash-550.webp 550w, img/card-slash-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-slash.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Slash</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.avif 400w, img/card-squats-550.avif 550w, img/card-squats-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.webp 400w, img/card-squats-550.webp 550w, img/card-squats-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-squats.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Squat Rush</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.avif 400w, img/card-hula-550.avif 550w, img/card-hula-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.webp 400w, img/card-hula-550.webp 550w, img/card-hula-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-hula.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Hula Hoop</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.avif 400w, img/card-dance-550.avif 550w, img/card-dance-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.webp 400w, img/card-dance-550.webp 550w, img/card-dance-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-dance.jpg" loading="lazy" width="330" height="402" alt=""></picture><b>Dance Off</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.avif 400w, img/card-runner-550.avif 550w, img/card-runner-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.webp 400w, img/card-runner-550.webp 550w, img/card-runner-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-runner.jpg" loading="lazy" width="330" height="402" alt="Move Rush card art — an athlete sprinting down a city street at dusk"></picture><b>Move Rush</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.avif 400w, img/card-skyfall-550.avif 550w, img/card-skyfall-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.webp 400w, img/card-skyfall-550.webp 550w, img/card-skyfall-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-skyfall.jpg" loading="lazy" width="330" height="402" alt="Skyfall card art — a wingsuit flyer banking through a ring above the sea"></picture><b>Skyfall</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.avif 400w, img/card-downhill-550.avif 550w, img/card-downhill-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.webp 400w, img/card-downhill-550.webp 550w, img/card-downhill-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-downhill.jpg" loading="lazy" width="330" height="402" alt="Downhill card art — a snowboarder carving down a floodlit piste"></picture><b>Downhill</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.avif 400w, img/card-boxing-550.avif 550w, img/card-boxing-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.webp 400w, img/card-boxing-550.webp 550w, img/card-boxing-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-boxing.jpg" loading="lazy" width="330" height="402" alt="Boxing card art — a boxer with both gloves up in a floodlit ring"></picture><b>Boxing</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.avif 400w, img/card-keeper-550.avif 550w, img/card-keeper-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.webp 400w, img/card-keeper-550.webp 550w, img/card-keeper-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-keeper.jpg" loading="lazy" width="330" height="402" alt="Penalty Hero card art — a goalkeeper diving across the goalmouth"></picture><b>Penalty Hero</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.avif 400w, img/card-swim-550.avif 550w, img/card-swim-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.webp 400w, img/card-swim-550.webp 550w, img/card-swim-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-swim.jpg" loading="lazy" width="330" height="402" alt="Swim card art — a swimmer mid front-crawl stroke in a racing pool"></picture><b>Swim</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.avif 400w, img/card-slash-550.avif 550w, img/card-slash-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.webp 400w, img/card-slash-550.webp 550w, img/card-slash-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-slash.jpg" loading="lazy" width="330" height="402" alt="Slash card art — fruit cut in mid-air above a city rooftop"></picture><b>Slash</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.avif 400w, img/card-squats-550.avif 550w, img/card-squats-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.webp 400w, img/card-squats-550.webp 550w, img/card-squats-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-squats.jpg" loading="lazy" width="330" height="402" alt="Squat Rush card art — an athlete squatting under a ball in a park"></picture><b>Squat Rush</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.avif 400w, img/card-hula-550.avif 550w, img/card-hula-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.webp 400w, img/card-hula-550.webp 550w, img/card-hula-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-hula.jpg" loading="lazy" width="330" height="402" alt="Hula Hoop card art — an athlete spinning a hoop on a beach"></picture><b>Hula Hoop</b></figure>
+      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.avif 400w, img/card-dance-550.avif 550w, img/card-dance-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.webp 400w, img/card-dance-550.webp 550w, img/card-dance-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-dance.jpg" loading="lazy" width="330" height="402" alt="Dance Off card art — dancers on a lit stage following a routine"></picture><b>Dance Off</b></figure>
     </div>
   </div>
 </section>

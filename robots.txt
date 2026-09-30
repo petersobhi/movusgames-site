@@ -1,0 +1,5 @@
+# https://movusgames.com/
+User-agent: *
+Allow: /
+
+Sitemap: https://movusgames.com/sitemap.xml
