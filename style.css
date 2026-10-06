@@ -311,19 +311,19 @@ footer.site nav a { margin-right: 22px; }
 }
 .meta { color: var(--muted); font-size: 14.5px; }
 
-main.doc { padding: 56px 0 24px; max-width: var(--prose); }
-main.doc h1 { font-size: clamp(34px, 5vw, 46px); }
-main.doc h2 { font-size: 24px; margin-top: 40px; }
-main.doc ul { padding-left: 20px; }
-main.doc li { margin: 8px 0; color: var(--text-2); }
-main.doc p { color: var(--text-2); }
-main.doc table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 15px; }
-main.doc th, main.doc td {
+.doc { padding: 56px 0 24px; max-width: var(--prose); }
+.doc h1 { font-size: clamp(34px, 5vw, 46px); }
+.doc h2 { font-size: 24px; margin-top: 40px; }
+.doc ul { padding-left: 20px; }
+.doc li { margin: 8px 0; color: var(--text-2); }
+.doc p { color: var(--text-2); }
+.doc table { border-collapse: collapse; width: 100%; margin: 18px 0; font-size: 15px; }
+.doc th, .doc td {
   text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line);
   vertical-align: top;
 }
-main.doc th { color: var(--text); font-weight: 700; }
-main.doc code {
+.doc th { color: var(--text); font-weight: 700; }
+.doc code {
   background: var(--panel); border: 1px solid var(--line);
   border-radius: 6px; padding: 1px 6px; font-size: 14px;
 }
@@ -351,4 +351,68 @@ main.doc code {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { animation: none !important; transition: none !important; }
+}
+
+
+/* ------------------------------------------------- content pages (2026-10-07)
+   Game pages, guides, How it works and the FAQ. Everything below reuses the
+   palette and the 16px card radius above; nothing here introduces a colour. */
+
+.doc.wide { max-width: var(--wrap); }
+article.doc, div.doc { padding: 40px 0 72px; }
+
+.crumbs { font-size: 14px; color: var(--muted); margin: 0 0 18px; }
+.crumbs a { color: var(--text-2); }
+.crumbs span { margin: 0 6px; }
+.crumbs span[aria-current] { margin: 0; color: var(--muted); }
+
+.game-hero { padding: 48px 0 64px; }
+.stats { display: grid; grid-template-columns: repeat(3, auto); gap: 10px 28px;
+         margin: 0; justify-content: start; }
+.stats div { border-left: 2px solid var(--cyan); padding-left: 12px; }
+.stats dt { font-size: 12px; letter-spacing: .12em; text-transform: uppercase;
+            color: var(--muted); }
+.stats dd { margin: 2px 0 0; font-size: 22px; font-weight: 800; color: var(--text);
+            font-variant-numeric: tabular-nums; }
+.stats small { font-size: 13px; font-weight: 500; color: var(--text-2); }
+
+a.game { display: block; color: inherit; }
+a.game:hover { text-decoration: none; border-color: var(--line-lit); }
+
+.qa { border-top: 1px solid var(--line); padding: 16px 0; }
+.qa:last-of-type { border-bottom: 1px solid var(--line); }
+.qa summary { cursor: pointer; font-weight: 700; font-size: 17px; list-style: none;
+              display: flex; justify-content: space-between; gap: 16px; }
+.qa summary::-webkit-details-marker { display: none; }
+.qa summary::after { content: "+"; color: var(--cyan); font-weight: 400; }
+.qa[open] summary::after { content: "−"; }
+.qa p { margin: 10px 0 0; color: var(--text-2); }
+
+.game-list { display: grid; gap: 18px; margin-top: 36px; }
+.game-row { display: grid; grid-template-columns: 150px 1fr; gap: 24px; align-items: center;
+            padding: 16px; border: 1px solid var(--line); border-radius: var(--radius);
+            background: var(--panel); color: inherit; }
+.game-row:hover { text-decoration: none; border-color: var(--line-lit); }
+.game-row .thumb { border-radius: 12px; overflow: hidden; aspect-ratio: 330 / 402; }
+.game-row .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.game-row h2 { margin: 0 0 6px; font-size: 24px; }
+.game-row p { margin: 0 0 6px; color: var(--text-2); }
+
+.guide-list { display: grid; gap: 18px; margin-top: 32px;
+              grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.guide { display: block; padding: 22px; border: 1px solid var(--line);
+         border-radius: var(--radius); background: var(--panel); color: inherit; }
+.guide:hover { text-decoration: none; border-color: var(--line-lit); }
+.guide h2 { margin: 0 0 8px; font-size: 20px; }
+.guide p { margin: 0; color: var(--text-2); font-size: 15.5px; }
+
+.doc ol { padding-left: 22px; }
+.doc ol li { margin: 8px 0; color: var(--text-2); }
+aside.more { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); }
+aside.more h2 { margin-top: 24px; }
+
+@media (max-width: 560px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .game-row { grid-template-columns: 96px 1fr; gap: 16px; }
+  .game-row h2 { font-size: 20px; }
 }

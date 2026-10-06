@@ -1,11 +1,19 @@
 # movusgames.com
 
-The public site for Movus. Three static pages, no build step, no dependencies.
+The public site for Movus. Static pages, no build step at serve time, no
+dependencies.
 
 - `index.html`   — landing page
 - `privacy.html` — the App Store **Privacy Policy URL** (mandatory)
 - `support.html` — the App Store **Support URL** (mandatory)
 - `CNAME`        — the custom domain, for GitHub Pages
+- `games/`, `guides/`, `how-it-works/`, `faq/` and `sitemap.xml` — **written
+  by `python3 tools/build-pages.py`**, which holds their content and shares one
+  header, footer and head across them. Edit the script, run it, commit the
+  output. Game numbers (MET, kcal per 10 min) come from the app's
+  `Workout.met` and its calorie formula; keep them in step.
+- `img/` — written by `python3 tools/make-images.py` from the app repo's App
+  Store screenshots and card art.
 
 Source of truth lives in the app repo under `site/`; this repo is the
 deployment. Copy the folder over and push.

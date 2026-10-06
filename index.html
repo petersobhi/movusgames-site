@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Movus — Body-Controlled Fitness Games for iPhone</title>
-<meta name="description" content="Turn your iPhone's front camera into a controller. Eleven fitness games played by running, dodging, leaning and punching — nothing is ever recorded.">
+<title>Movus — Fitness Games You Play With Your Body | iPhone</title>
+<meta name="description" content="Fitness games for iPhone that you play with your body. The front camera reads your movement — run, jump, squat, punch and swim. No controller, no account, nothing recorded.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0b0716">
 <link rel="canonical" href="https://movusgames.com/">
@@ -26,7 +26,7 @@
 
 <link rel="preload" href="fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" as="image" type="image/avif" imagesrcset="img/shot-boxing-700.avif 700w, img/shot-boxing-1000.avif 1000w, img/shot-boxing-1400.avif 1400w" imagesizes="(max-width: 900px) 92vw, 560px" fetchpriority="high">
-<link rel="stylesheet" href="style.css?v=4">
+<link rel="stylesheet" href="style.css?v=5">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -67,18 +67,55 @@
         "https://movusgames.com/img/shot-boxing.jpg",
         "https://movusgames.com/img/shot-hub.jpg"
       ],
-      "description": "Movus reads your movement through the iPhone's front camera and turns it into a game. Eleven fitness games played by running, dodging, leaning, swimming and punching, with no buttons and no wearables. Camera frames are processed on the device and never recorded or uploaded.",
+      "description": "Movus reads your movement through the iPhone's front camera and turns it into a game. Six fitness games played by running, jumping, squatting, swimming and punching, with no buttons and no wearables. Camera frames are processed on the device and never recorded or uploaded.",
       "publisher": {
         "@id": "https://movusgames.com/#org"
       },
       "featureList": [
         "Camera-controlled gameplay with no buttons or wearables",
-        "Eleven fitness games",
+        "Six fitness games: Move Rush, Penalty Hero, Swim, Slash, Squat Rush and Boxing",
         "Calories, reps and streaks written to Apple Health",
         "All camera processing on-device; nothing recorded or uploaded"
       ],
       "privacyPolicy": "https://movusgames.com/privacy.html"
-    }
+    },
+{
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Does Movus record video of me?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "No. Every camera frame is processed on the phone and discarded. Nothing is recorded, saved or uploaded."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What do I need to play?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "An iPhone running iOS 17 or later, somewhere to stand it at about waist height, and two to three metres of clear space."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Is it a real workout?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Most games are vigorous when played continuously \u2014 roughly 50 to 80 active calories in ten minutes for a 70 kg adult, depending on the game."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Can kids play?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes. There is no account and no chat, and the moves are natural ones: jump, squat, punch, swipe."
+   }
+  }
+ ]
+}
   ]
 }
 </script>
@@ -89,9 +126,9 @@
   <div class="wrap">
     <a class="brand" href="/"><picture><source type="image/avif" sizes="32px" srcset="img/icon-96.avif 96w, img/icon-192.avif 192w"><source type="image/webp" sizes="32px" srcset="img/icon-96.webp 96w, img/icon-192.webp 192w"><img sizes="32px" decoding="async" src="img/icon-96.png" width="32" height="32" alt=""></picture><span>MOVUS</span></a>
     <nav class="site">
-      <a href="#games">Games</a>
-      <a href="#how">How it works</a>
-      <a href="#privacy">Privacy</a>
+      <a href="/games/">Games</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/guides/">Guides</a>
       <a class="keep" href="support.html">Support</a>
     </nav>
   </div>
@@ -109,8 +146,8 @@
       and turns it into a game. Run, dodge, lean, swim and punch — no buttons,
       no wearables, nothing strapped to you.</p>
       <div class="cta-row">
-        <a class="pill" href="#games">See the games</a>
-        <a class="pill ghost" href="#privacy">How the camera works</a>
+        <a class="pill" href="/games/">See the games</a>
+        <a class="pill ghost" href="/how-it-works/">How it works</a>
       </div>
       <p class="note-inline">iPhone · iOS 17 or later · a couple of metres of space</p>
     </div>
@@ -156,22 +193,18 @@
 <section id="games" class="tint">
   <div class="wrap">
     <p class="kicker">The line-up</p>
-    <h2>Eleven games, one controller.</h2>
-    <p class="section-lede">A street to sprint, a mountain to carve, a pool to
+    <h2>Six games, one controller.</h2>
+    <p class="section-lede">A street to sprint, a goal to guard, a pool to
     swim, a ring to fight in. Each one asks your body for something different,
     and each one is a workout whether or not you came for one.</p>
 
     <div class="games">
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.avif 400w, img/card-runner-550.avif 550w, img/card-runner-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.webp 400w, img/card-runner-550.webp 550w, img/card-runner-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-runner.jpg" loading="lazy" width="330" height="402" alt="Move Rush card art — an athlete sprinting down a city street at dusk"></picture><b>Move Rush</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.avif 400w, img/card-skyfall-550.avif 550w, img/card-skyfall-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-skyfall-400.webp 400w, img/card-skyfall-550.webp 550w, img/card-skyfall-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-skyfall.jpg" loading="lazy" width="330" height="402" alt="Skyfall card art — a wingsuit flyer banking through a ring above the sea"></picture><b>Skyfall</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.avif 400w, img/card-downhill-550.avif 550w, img/card-downhill-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-downhill-400.webp 400w, img/card-downhill-550.webp 550w, img/card-downhill-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-downhill.jpg" loading="lazy" width="330" height="402" alt="Downhill card art — a snowboarder carving down a floodlit piste"></picture><b>Downhill</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.avif 400w, img/card-boxing-550.avif 550w, img/card-boxing-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.webp 400w, img/card-boxing-550.webp 550w, img/card-boxing-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-boxing.jpg" loading="lazy" width="330" height="402" alt="Boxing card art — a boxer with both gloves up in a floodlit ring"></picture><b>Boxing</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.avif 400w, img/card-keeper-550.avif 550w, img/card-keeper-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.webp 400w, img/card-keeper-550.webp 550w, img/card-keeper-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-keeper.jpg" loading="lazy" width="330" height="402" alt="Penalty Hero card art — a goalkeeper diving across the goalmouth"></picture><b>Penalty Hero</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.avif 400w, img/card-swim-550.avif 550w, img/card-swim-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.webp 400w, img/card-swim-550.webp 550w, img/card-swim-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-swim.jpg" loading="lazy" width="330" height="402" alt="Swim card art — a swimmer mid front-crawl stroke in a racing pool"></picture><b>Swim</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.avif 400w, img/card-slash-550.avif 550w, img/card-slash-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.webp 400w, img/card-slash-550.webp 550w, img/card-slash-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-slash.jpg" loading="lazy" width="330" height="402" alt="Slash card art — fruit cut in mid-air above a city rooftop"></picture><b>Slash</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.avif 400w, img/card-squats-550.avif 550w, img/card-squats-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.webp 400w, img/card-squats-550.webp 550w, img/card-squats-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-squats.jpg" loading="lazy" width="330" height="402" alt="Squat Rush card art — an athlete squatting under a ball in a park"></picture><b>Squat Rush</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.avif 400w, img/card-hula-550.avif 550w, img/card-hula-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-hula-400.webp 400w, img/card-hula-550.webp 550w, img/card-hula-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-hula.jpg" loading="lazy" width="330" height="402" alt="Hula Hoop card art — an athlete spinning a hoop on a beach"></picture><b>Hula Hoop</b></figure>
-      <figure class="game"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.avif 400w, img/card-dance-550.avif 550w, img/card-dance-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-dance-400.webp 400w, img/card-dance-550.webp 550w, img/card-dance-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-dance.jpg" loading="lazy" width="330" height="402" alt="Dance Off card art — dancers on a lit stage following a routine"></picture><b>Dance Off</b></figure>
+      <a class="game" href="/games/move-rush/"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.avif 400w, img/card-runner-550.avif 550w, img/card-runner-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-runner-400.webp 400w, img/card-runner-550.webp 550w, img/card-runner-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-runner.jpg" loading="lazy" width="330" height="402" alt="Move Rush card art — an athlete sprinting down a city street at dusk"></picture><b>Move Rush</b></a>
+      <a class="game" href="/games/penalty-hero/"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.avif 400w, img/card-keeper-550.avif 550w, img/card-keeper-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-keeper-400.webp 400w, img/card-keeper-550.webp 550w, img/card-keeper-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-keeper.jpg" loading="lazy" width="330" height="402" alt="Penalty Hero card art — a goalkeeper diving across the goalmouth"></picture><b>Penalty Hero</b></a>
+      <a class="game" href="/games/swim/"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.avif 400w, img/card-swim-550.avif 550w, img/card-swim-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-swim-400.webp 400w, img/card-swim-550.webp 550w, img/card-swim-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-swim.jpg" loading="lazy" width="330" height="402" alt="Swim card art — a swimmer mid front-crawl stroke in a racing pool"></picture><b>Swim</b></a>
+      <a class="game" href="/games/slash/"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.avif 400w, img/card-slash-550.avif 550w, img/card-slash-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-slash-400.webp 400w, img/card-slash-550.webp 550w, img/card-slash-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-slash.jpg" loading="lazy" width="330" height="402" alt="Slash card art — fruit cut in mid-air above a city rooftop"></picture><b>Slash</b></a>
+      <a class="game" href="/games/squat-rush/"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.avif 400w, img/card-squats-550.avif 550w, img/card-squats-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-squats-400.webp 400w, img/card-squats-550.webp 550w, img/card-squats-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-squats.jpg" loading="lazy" width="330" height="402" alt="Squat Rush card art — an athlete squatting under a ball in a park"></picture><b>Squat Rush</b></a>
+      <a class="game" href="/games/boxing/"><picture><source type="image/avif" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.avif 400w, img/card-boxing-550.avif 550w, img/card-boxing-700.avif 700w"><source type="image/webp" sizes="(max-width: 560px) 45vw, 240px" srcset="img/card-boxing-400.webp 400w, img/card-boxing-550.webp 550w, img/card-boxing-700.webp 700w"><img sizes="(max-width: 560px) 45vw, 240px" decoding="async" src="img/card-boxing.jpg" loading="lazy" width="330" height="402" alt="Boxing card art — a boxer with both gloves up in a floodlit ring"></picture><b>Boxing</b></a>
     </div>
   </div>
 </section>
@@ -282,14 +315,45 @@
   </div>
 </section>
 
+<!-- ----------------------------------------------------------- guides -->
+<section>
+  <div class="wrap">
+    <p class="kicker">Guides</p>
+    <h2>Get more out of it.</h2>
+    <div class="guide-list">
+      <a class="guide" href="/guides/set-up-iphone-for-motion-games/"><h2>Set up your iPhone for motion games</h2><p>Where to put the phone, how far to stand, and the light that makes tracking reliable.</p></a>
+      <a class="guide" href="/guides/home-workout-games/"><h2>Home workout games you play with your body</h2><p>How camera-controlled games work and how to build a real session from them.</p></a>
+      <a class="guide" href="/guides/calories-burned-exercise-games/"><h2>How many calories do exercise games burn?</h2><p>The method behind the number, and typical figures for every game.</p></a>
+    </div>
+    <p style="margin-top:24px"><a href="/guides/">All guides →</a></p>
+  </div>
+</section>
+
+<!-- -------------------------------------------------------------- faq -->
+<section class="tint">
+  <div class="wrap prose">
+    <p class="kicker">Questions</p>
+    <h2>Quick answers.</h2>
+      <details class="qa"><summary>Does Movus record video of me?</summary><p>No. Every camera frame is processed on the phone and discarded. Nothing is recorded, saved or uploaded.</p></details>
+      <details class="qa"><summary>What do I need to play?</summary><p>An iPhone running iOS 17 or later, somewhere to stand it at about waist height, and two to three metres of clear space.</p></details>
+      <details class="qa"><summary>Is it a real workout?</summary><p>Most games are vigorous when played continuously — roughly 50 to 80 active calories in ten minutes for a 70 kg adult, depending on the game.</p></details>
+      <details class="qa"><summary>Can kids play?</summary><p>Yes. There is no account and no chat, and the moves are natural ones: jump, squat, punch, swipe.</p></details>
+    <p style="margin-top:24px"><a href="/faq/">All questions →</a></p>
+  </div>
+</section>
+
 </main>
 
 <footer class="site">
   <div class="wrap">
     <div>© 2026 Movus</div>
     <nav>
-      <a href="privacy.html">Privacy</a>
-      <a href="support.html">Support</a>
+      <a href="/games/">Games</a>
+      <a href="/how-it-works/">How it works</a>
+      <a href="/guides/">Guides</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/support.html">Support</a>
     </nav>
   </div>
 </footer>

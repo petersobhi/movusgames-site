@@ -2,20 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://movusgames.com/</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-07</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://movusgames.com/games/move-rush/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/games/penalty-hero/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/games/swim/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/games/slash/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/games/squat-rush/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/games/boxing/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/games/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/home-workout-games/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/set-up-iphone-for-motion-games/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/calories-burned-exercise-games/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/exercise-games-for-kids-and-families/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/no-equipment-cardio-at-home/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/is-camera-fitness-private/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/guides/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/how-it-works/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://movusgames.com/faq/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://movusgames.com/privacy.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://movusgames.com/support.html</loc>
-    <lastmod>2026-09-30</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-10-07</lastmod>
+    <priority>0.4</priority>
   </url>
 </urlset>
