@@ -36,7 +36,7 @@ def kcal10(met):
 # ------------------------------------------------------------------- games
 GAMES = [
     dict(slug="move-rush", id="runner", name="Move Rush", shot="body", card="runner",
-         met=8.5, accent="#ff8a3d",
+         met=6.5, accent="#ff8a3d",
          title="Move Rush — an endless runner you play by running",
          short="An endless runner through a dusk city. Step left and right to change lane, jump the barriers, squat under the gantries.",
          lede="An endless runner through a toy city at dusk, played with your whole body. Step across to change lanes, jump the red barriers, squat under the blue gantries — and keep going as the street speeds up.",
@@ -52,7 +52,7 @@ GAMES = [
               ("How much space does Move Rush need?", "About two metres side to side so you can step a lane each way, and two to three metres back from the phone so your whole body is in frame."),
               ("Is there a two-player mode?", "Not yet. Two-player is held back until it has been tested properly with two people in front of one camera.")]),
     dict(slug="penalty-hero", id="keeper", name="Penalty Hero", shot="keeper", card="keeper",
-         met=6.0, accent="#bc76f5",
+         met=4.5, accent="#bc76f5",
          title="Penalty Hero — a goalkeeper game you play with your hands",
          short="Stand in goal and save penalties with your own hands. Reach high, reach wide, get low — every save is a real dive.",
          lede="You are the goalkeeper. Penalties come in high, wide and low, and you save them with your own hands — reach for the top corner, throw an arm out to the side, get down for the low ones. The crowd lets you know how you did.",
@@ -68,7 +68,7 @@ GAMES = [
               ("Can I save with my feet?", "No — hands only. Feet are the first thing a camera loses in a normal room, so a save that depended on them would be luck."),
               ("Is it good exercise?", "It is intermittent: short, explosive reaches with a breath between shots. About %d kcal in ten minutes for a 70 kg adult.")]),
     dict(slug="swim", id="swim", name="Swim", shot="swim", card="swim",
-         met=6.8, accent="#4dd1f2",
+         met=5.0, accent="#4dd1f2",
          title="Swim — a front-crawl race you swim standing up",
          short="Race three lanes to the wall with a real front-crawl stroke. Reach over, pull through, and keep the rhythm.",
          lede="A swimming race you do standing in your living room. Swim front crawl with your arms — reach over, catch, pull through — and race three swimmers to the wall. Rhythm wins: alternate arms and keep the stroke long.",
@@ -84,7 +84,7 @@ GAMES = [
               ("Is it hard on the shoulders?", "It takes your arms through a full overhead range for the length of a race. Go at your own pace and stop if anything hurts."),
               ("How long is a race?", "Under a minute for a quick swimmer — long enough to feel it, short enough to go again.")]),
     dict(slug="slash", id="slash", name="Slash", shot="slash", card="slash",
-         met=7.8, accent="#f257c4",
+         met=4.5, accent="#f257c4",
          title="Slash — cut flying fruit with your hands",
          short="Your hands are blades. Swipe through fruit thrown over a rooftop at sunset — and leave the bombs alone.",
          lede="Fruit flies up over a city rooftop and your hands are the blades. Swipe through it in mid-air, chain cuts for combos, and keep your hands off the bombs. Both hands, all the time.",
@@ -100,7 +100,7 @@ GAMES = [
               ("What happens if I hit a bomb?", "You lose a life. You have six."),
               ("Is it a good workout?", "Yes — continuous arm work at a high rate. About %d kcal in ten minutes for a 70 kg adult.")]),
     dict(slug="squat-rush", id="squats", name="Squat Rush", shot="squats", card="squats",
-         met=8.0, accent="#9adb3e",
+         met=6.0, accent="#9adb3e",
          title="Squat Rush — dodge balls by squatting",
          short="Three machines fire balls at your head. Squat under every one. A leg workout that does not feel like one.",
          lede="Three pitching machines in a park take aim at you, and the only way out of the way is down. Squat under every ball, come back up, and keep your three hearts as the volleys speed up.",
@@ -116,7 +116,7 @@ GAMES = [
               ("Is it suitable for beginners?", "Yes. Squat as deep as is comfortable; the game only needs your head to get under the ball."),
               ("How many calories does it burn?", "About %d kcal in ten minutes for a 70 kg adult — repeated bodyweight squats add up fast.")]),
     dict(slug="boxing", id="boxing", name="Boxing", shot="boxing", card="boxing",
-         met=7.8, accent="#f24d57",
+         met=5.5, accent="#f24d57",
          title="Boxing — a first-person fight you throw real punches in",
          short="First-person boxing. Throw real punches, slip his jab, and land the counter. A new opponent every fight.",
          lede="A first-person fight in a floodlit ring. Your fists are on screen, and they go where yours go — throw real punches, lean out of the way of his, duck the high ones, and come back over the top. Every fight is a new opponent.",
@@ -274,8 +274,14 @@ burns less. Movus uses your own numbers from Apple Health if you allow it.</p>
 
 <h2>Is it enough to count as exercise?</h2>
 <p>Most adults are advised to get around 150 minutes of moderate activity a week.
-Activities above about 6 MET count as vigorous, and most Movus games are in that
-range when played continuously. Fifteen to twenty minutes a day of play adds up.</p>
+Activities from 3 to 6 MET count as moderate and anything above 6 as vigorous, so
+every Movus game is squarely moderate activity and the hardest two reach the
+vigorous line. Fifteen to twenty minutes a day counts toward that 150.</p>
+<p>We would rather under-promise here. These figures are deliberately conservative:
+an active game is not the sport it imitates — there is no ground to cover and
+nothing to push against — and measured studies of camera-controlled games put them
+well below the equivalent real activity. Your own watch, if you wear one, is a
+better number than ours.</p>
 """),
     dict(slug="exercise-games-for-kids-and-families",
          title="Active games for kids and families at home",
