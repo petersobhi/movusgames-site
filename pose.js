@@ -32,7 +32,7 @@
      fraction of full extension — exactly cos(fold / 2). */
   var POSES = [
     { name: 'Tracking',      hip: [0, 0],        tilt: 0,
-      arms: [[-0.16, 0.97], [0.16, 0.97]], legs: [[-0.05, 0.99], [0.05, 0.99]] },
+      arms: [[-0.27, 0.96], [0.27, 0.96]], legs: [[-0.07, 0.99], [0.07, 0.99]] },
 
     { name: 'Step · left',   hip: [-0.085, 0],   tilt: -0.05,
       arms: [[-0.34, 0.93], [0.26, 0.95]], legs: [[-0.20, 0.97], [0.16, 0.96]] },
