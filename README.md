@@ -14,9 +14,29 @@ dependencies.
   `Workout.met` and its calorie formula; keep them in step.
 - `img/` — written by `python3 tools/make-images.py` from the app repo's App
   Store screenshots and card art.
+- `pose.js` — the tracked figure in the home page's viewfinder. Its
+  proportions are the same Drillis & Contini segment table the app's own
+  harness uses (`MoveGame/Dev/PoseBody.swift`) and its limbs are placed the
+  same way the rig places them, from a direction and a reach, so the figure
+  on the site is literally the body the detector is tested against. The
+  poses it cycles are the signals the detector reads. It is the only
+  animation on the site; keep it that way.
 
 Source of truth lives in the app repo under `site/`; this repo is the
 deployment. Copy the folder over and push.
+
+## The design
+
+`style.css` opens with the plan — colour, type, layout and motion — and the
+short version is: **one ground, one accent, three type voices, and no cards.**
+The sheet it replaced spent crimson, cyan and gold on decoration and then had
+no colour left to point with, and every section was the same
+kicker → heading → three-rounded-cards block, which is what the owner meant
+by "AI slop". If you add a section, give it a shape the page does not already
+have.
+
+Numbers, specs and labels are set in monospace. That is not a texture: this
+product makes measured claims, so its data is set as data.
 
 ## Changing the stylesheet
 

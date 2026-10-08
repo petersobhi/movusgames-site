@@ -20,7 +20,7 @@ import json, os, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://movusgames.com"
-CSS = "/style.css?v=5"
+CSS = "/style.css?v=6"
 TODAY = datetime.date.today().isoformat()
 
 # --------------------------------------------------------------- reference
