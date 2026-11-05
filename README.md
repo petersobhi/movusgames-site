@@ -39,9 +39,13 @@ badge again.
 - **The hero is real footage from the store build**: `img/reel.mp4`, recipe and warnings in
   `tools/make-reel.sh`. `reel.js` makes the phone's glow and the highlighted name follow it.
   Re-record it when a game changes, and do not show a character the store build does not have.
-- There is no analytics on this site. App Store Connect's App Analytics lists it under the
-  **Web Referrer** source, which is why these links open in the same tab and never carry
-  `rel=noreferrer`.
+- Visits are counted by **Cloudflare Web Analytics**, under Observability > Analytics > Web
+  analytics in the Cloudflare dashboard. It uses automatic setup, so Cloudflare injects the
+  script and it is not in this repo. It is set to "Enable, excluding visitor data in the EU",
+  so nothing is counted, and no script is served, for EU visitors. A check from Germany will
+  therefore find no script. `privacy.html` says all of this, so change it with the setting.
+- App Store Connect's App Analytics lists this site under the **Web Referrer** source, which
+  is why these links open in the same tab and never carry `rel=noreferrer`.
 
 ## Changing the stylesheet
 
