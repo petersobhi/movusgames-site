@@ -20,7 +20,13 @@ import json, os, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://movusgames.com"
-CSS = "/style.css?v=6"
+CSS = "/style.css?v=9"
+# The App Store link has no country in it, so Apple sends each visitor to their
+# own storefront. No `target` and no `rel=noreferrer`: the link has to carry the
+# referrer, because that is what App Store Connect's "Web Referrer" source reads.
+APP_ID = "6808390249"
+APP = f"https://apps.apple.com/app/id{APP_ID}"
+BADGE = "https://toolbox.marketingtools.apple.com/api/badges/download-on-the-app-store/white/en-us?size=250x83"
 TODAY = datetime.date.today().isoformat()
 
 # --------------------------------------------------------------- reference
@@ -396,7 +402,7 @@ def picture(stem, w, h, sizes, alt, widths=(700, 1000, 1400), lazy=True, eager_h
 
 
 def card_pic(card, alt):
-    return picture(f"card-{card}", 330, 402, "(max-width: 560px) 45vw, 240px", alt,
+    return picture(f"card-{card}", 330, 375, "(max-width: 560px) 45vw, 240px", alt,
                    widths=(400, 550, 700))
 
 
@@ -408,14 +414,28 @@ def shot_pic(shot, alt, hero=False):
 HEADER = """<header class="site">
   <div class="wrap">
     <a class="brand" href="/"><picture><source type="image/avif" sizes="32px" srcset="/img/icon-96.avif 96w, /img/icon-192.avif 192w"><source type="image/webp" sizes="32px" srcset="/img/icon-96.webp 96w, /img/icon-192.webp 192w"><img sizes="32px" decoding="async" src="/img/icon-96.png" width="32" height="32" alt=""></picture><span>MOVUS</span></a>
-    <nav class="site">
-      <a href="/games/">Games</a>
-      <a href="/how-it-works/">How it works</a>
-      <a href="/guides/">Guides</a>
-      <a class="keep" href="/support.html">Support</a>
-    </nav>
+    <a class="store store-s" href="__APP__"><img src="__BADGE__" width="120" height="40" alt="Download on the App Store"></a>
   </div>
-</header>"""
+</header>""".replace("__APP__", APP).replace("__BADGE__", BADGE)
+
+GET = f"""<div class="get">
+  <a class="store" href="{APP}"><img src="{BADGE}" width="195" height="65" alt="Download on the App Store"></a>
+  <div class="scan"><img src="/img/qr-app-store.svg" width="65" height="65" alt="QR code for Movus on the App Store"><span>Or scan it<br>with your iPhone</span></div>
+</div>"""
+
+LOCK = '''<svg viewBox="0 0 14 16" aria-hidden="true"><path d="M7 0a4 4 0 0 0-4 4v2H2a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-1V4a4 4 0 0 0-4-4zm2 6H5V4a2 2 0 1 1 4 0z"/></svg>'''
+
+FINALE = f"""<section class="finale">
+  <div class="wrap">
+    <div class="closer">
+      <img class="closer-icon" src="/img/icon-192.webp" width="96" height="96" alt="">
+      <h2 class="race">Start moving</h2>
+      <p class="lede">Free on the App Store, for iPhone with iOS 17 or later.</p>
+      {GET}
+      <p class="privacy-note">{LOCK}Camera runs on-device. Nothing is recorded or uploaded.</p>
+    </div>
+  </div>
+</section>"""
 
 FOOTER = """<footer class="site">
   <div class="wrap">
@@ -444,6 +464,7 @@ def page(path, title, desc, body, schema, image="/img/og.jpg"):
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#0b0716">
 <link rel="canonical" href="{url}">
+<meta name="apple-itunes-app" content="app-id={APP_ID}">
 <link rel="icon" href="/img/favicon-64.png" sizes="64x64">
 <link rel="apple-touch-icon" href="/img/icon-180.png">
 <meta property="og:type" content="website">
@@ -467,6 +488,8 @@ def page(path, title, desc, body, schema, image="/img/og.jpg"):
 {HEADER}
 
 {body}
+
+{FINALE}
 
 {FOOTER}
 
@@ -504,7 +527,8 @@ def faq_schema(qs):
 
 
 APP_REF = {"@type": "MobileApplication", "@id": f"{SITE}/#app", "name": "Movus",
-           "operatingSystem": "iOS 17.0 or later", "applicationCategory": "GameApplication"}
+           "operatingSystem": "iOS 17.0 or later", "applicationCategory": "GameApplication",
+           "installUrl": APP, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}
 
 # -------------------------------------------------------------------- build
 written = []
@@ -517,7 +541,7 @@ for i, g in enumerate(GAMES):
     moves = "\n".join(f'<div class="step"><h3>{m}</h3><p>{d}</p></div>' for m, d in g["moves"])
     tips = "\n".join(f"<li>{t}</li>" for t in g["tips"])
     related = "\n".join(
-        f'<a class="game" href="/games/{o["slug"]}/">{card_pic(o["card"], o["name"])}<b>{o["name"]}</b></a>'
+        f'<a class="game g-{o["card"]}" href="/games/{o["slug"]}/">{card_pic(o["card"], o["name"])}<b>{o["name"]}</b></a>'
         for o in others[:4])
     body = f"""<main>
 <div class="hero game-hero">
@@ -532,6 +556,7 @@ for i, g in enumerate(GAMES):
         <div><dt>Active energy</dt><dd>≈{g['kcal']} <small>kcal / 10 min*</small></dd></div>
         <div><dt>Controller</dt><dd>Your body</dd></div>
       </dl>
+      {GET}
     </div>
     <div class="device">{shot_pic(g['shot'], g['name'] + ' in Movus, as seen from across the room.', hero=True)}</div>
   </div>
@@ -737,7 +762,8 @@ FAQ = [
     ("Does it work with Apple Health?", "Yes, if you turn it on in Settings: each game is saved as a workout with its active energy."),
     ("Why isn't the game reading my moves?", "Usually the phone is too low, you are too close, or the room is too dark. See the setup guide or the support page."),
     ("Is there a multiplayer mode?", "Not yet. Two-player modes are being tested and will come in a later version."),
-    ("When is Movus available?", "Movus is coming to the App Store for iPhone."),
+    ("Is Movus free?", "Yes. Movus is free to download from the App Store, with no account and no ads."),
+    ("Is Movus on Android?", "Not at the moment. Movus is only on the App Store."),
 ]
 trail = [("Home", "/"), ("FAQ", None)]
 written.append(page("/faq/", "Frequently asked questions | Movus",
